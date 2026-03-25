@@ -8,10 +8,10 @@ A tiny savings goal tracker. Backend: FastAPI + JSON file. No database, no bulls
 # 1. Install deps
 pip install -r backend/requirements.txt
 
-# 3. Test it works
+# 2. Test it works
 uvicorn backend.main:app --host 0.0.0.0 --port 8741
 
-# 4. Install as a systemd service so it starts on boot
+# 3. Install as a systemd service so it starts on boot
 cp savings-org.service /etc/systemd/system/savings-org.service
 
 # Edit the service file — replace YOUR_LINUX_USER with your actual username
